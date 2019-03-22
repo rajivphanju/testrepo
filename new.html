@@ -1,0 +1,75 @@
+
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+for (var i = 0; i <= 10; i++) {
+	if(i%2==0){
+	document.write("<b>"+i + "</b><br>");
+}
+else{
+document.write(i+"<br>");
+}
+}
+function xyz(){
+	document.write("NEPAL");
+}
+
+function abc(a){
+document.write(a);
+}
+	document.write(a+b);
+
+function add(a,b){
+}
+abc("Jay ");
+
+xyz();
+
+add(5,6);
+
+</script>
+
+
+<script type="text/javascript">
+	function userInput()
+	{
+var a = parseInt(document.getElementById("number1").value);
+var b = parseInt(document.getElementById("number2").value);
+var c = document.getElementById("operation").value;
+
+if (c=="Add"){
+var d = (a+b);
+		alert(d);
+	}
+
+else if(c=="Subtract"){
+	var d = (a-b);
+		alert(d);
+}
+else {
+	var d = (a*b);
+		alert(d);
+}
+}
+
+</script>
+
+<form>
+	<label>Enter a number:</label>
+	<input type="number" id="number1"/>
+	<input type="number" id="number2"/>
+	<select id="operation" onchange="userInput()">
+
+		<option>Add</option>
+		<option>Subtract</option>
+		<option>Multiply</option>
+	</select>
+	<button onclick="userInput()">
+		Click
+	</button>
+</body>
+</html>
